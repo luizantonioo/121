@@ -22,7 +22,7 @@ console.log("Modelo Carregado!!!");
 function speak(){
 var synth = window.speechSynthesis;
 speakData1 = "A primeira previsão e" + previsão1;
-speakData1 = "A segunda previsão e" + previsão2;
+speakData2 = "A segunda previsão e" + previsão2;
 var utterThis = new SpeechSynthesisUtterance(speakData1 + speakData2)
 synth.speak(utterThis);
 }
@@ -32,7 +32,7 @@ function check(){
 }
 function gotResult(error, results){
 if (error){
-console.log(error);
+console.error(error);
 }
 else{
 console.log(results);
